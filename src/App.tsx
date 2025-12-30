@@ -5,6 +5,7 @@ import Greeting from './components/Greeting'
 import UseState from './components/UseState';
 import Forms from './components/Forms';
 import LoginForm from './components/LoginForm';
+import ToggleButton from './components/ToggleButton';
 
 function App() {
 
@@ -15,7 +16,9 @@ function App() {
 
   return (
     <>
-      <div className=' text-7xl'>hi ts</div>
+      <div className=' h-screen dark:bg-black dark:text-white'>
+        <ToggleButton></ToggleButton>
+        <div className=' text-7xl'>hi ts</div>
       <Greeting name={name} age={age}></Greeting>
       <div>
         count : {count}
@@ -28,6 +31,7 @@ function App() {
       <UseState></UseState>
       <Forms></Forms>
       <LoginForm></LoginForm>
+      </div>
     </>
   )
 }
